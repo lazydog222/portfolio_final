@@ -1,0 +1,143 @@
+<!-- The code in this HTML file was based off of Jeff's video on bootstrap! 
+    Here is the link: https://www.youtube.com/watch?v=6Df6xbs5m8A&ab_channel=JeffHuang -->
+
+    <!doctype html>
+    <html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="bootstrap.css">
+        <link rel="stylesheet" href="style_toaster.css">
+        <title>Material Design</title>
+    </head>
+    <body>
+        <nav class="navbar navbar-light navbar-custom navbar-expand-sm">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Material Design</a>
+                <div class="collapse navbar-collapse">
+                    <ul class="navbar-nav">
+                        <li class="navbar-item"><a href="#Design_questions" class="nav-link">Design Problem</a></li>
+                        <li class="navbar-item"><a href="#first" class="nav-link">First Iteration</a></li>
+                        <li class="navbar-item"><a href="#second" class="nav-link">Second Iteration</a></li>
+                        <li class="navbar-item"><a href="#video" class="nav-link">Video</a></li>
+                    </ul>
+                </div>
+            </div>    
+        </nav>
+        <div class = "d-flex flex-column blankets justify-content-center align-items-center">
+            <h1 class="text-dark display-2">Material Design</h1>
+            <h2>Light Box</h2>
+        </div> 
+        <div id = "Design_questions" class = "container w-80  border-bottom mb-2">
+            <h4 class = "pt-3"> Design Question </h4> 
+            <p class = "lead"> How can we make furniture that removes us from the digital world? </p>
+        </div>
+        <div id = "first" class = "container w-80  border-bottom mb-2">
+            <h4 class = "pt-3 text-center"> First Iteration </h4> 
+            <div class = "flex-row justify-content-center text-center">
+            <img src = "./box_img/1.jpeg" class = "w-25 p-5">
+            <img src = "./box_img/2.jpeg" class = "w-25 p-5">
+            </div>
+            <p class = "lead mb-5"> 
+                LightBox is an experiment with light and cardboard that hopes to build intimacy and connection by mimicking the effects of a 
+                bonfire and forcing users to give up their phone.  
+                <br>
+                <br>
+                <b>Project Overview</b>
+                <br>
+                <br>
+                On class in Wednesday, I sketched the direction I wanted to take my LightBox.  I wanted to use the same base, but add functionality with the 
+                Arduino and make it feel more like a fire.  In addition, following the same theme as my last project, I wanted the product to decrease phone use.  
+                Therefore, the user can only turn on the LightBox fire if they insert there phone into the slot.  A user can not use the LightBox while using their phone. 
+                Before building the object, I looked around for some inspiration.  I liked the aesthetics and low to the ground nature of Japanese furniture, and made a 
+                Pinterest board of such items to guide me through the building process.  Check it out <a href = "https://pin.it/24FRt9b">here </a>
+                <br>
+                <br>
+                <b>Design Process</b>
+                <br>
+                <br>
+                The process was done it two different steps.  First, I coded the Arduino and then I integrated the system into the LightBox itself.
+                <br>
+                <br>
+                <b>1. Arduino</b>
+                <br>
+                <br>
+                Right after class, while working at the BDW, I was able to figure out the circuitry for the Arduino.  I found a project on Instructables that turned on a light when something got close to the sensor and copied the code and wired up the board (https://www.instructables.com/Motion-activated-light-with-Arduino-and-HC-SR04-se/).  Then, I found another project that showed how to make a set of three lights flicker similar to a fire, and integrated it into the code base.
+                <br>
+                <br>
+                <b>2. Integration with Box</b>
+                <br>
+                <br>
+                With the code all set and ready to go, I taped it to a piece of cardboard and attached it to the LightBox that I had made in last weeks iteration.  To improve on my old iteration, I added two walls of tape, which create a nice ambient light.  I also added a compartment which allows the user to insert there phone and turn on the LightBox.  
+                <br>
+                <br>
+                <b>Conclusion</b>
+                <br>
+                <br>
+                I am pretty happy with how the device turned out.  The box feels like a fire and creates intimacy in the user’s space.  Also, I was excited to see the Arduino come in hand and add some interesting user interaction.  I think the product could be made more useful if it was bigger and brighter. 
+            </p>
+        </div>
+        <div id = "second" class = "container w-80  border-bottom mb-2">
+            <h4 class = "pt-3 text-center"> Second Iteration </h4> 
+            <div class = "flex-row justify-content-center text-center">
+                <img src = "./box_img/4.jpeg" class = "w-25 p-1">
+                <img src = "./box_img/5.jpeg" class = "w-25 p-1">
+                <img src = "./box_img/6.jpeg" class = "w-25 p-1">
+                </div>
+            <p class = "lead mb-5"> 
+                <b> <b> Changes from Prototype One </b> </b>
+                <br>
+                <br>
+                <b>1. No Arduino</b>
+                <br>
+                <br>
+                I got rid of the Arduino to make the experience fully analog.  Depending on the Arduino 
+                battery / having the plug in the table didn’t make sense.
+                <br>
+                <br>
+                <b> 2. Phone Powered </b>
+                <br>
+                <br>
+                Based on advice from Jack, I decided to use the phone flashlights to power the Light Box!  
+                This servers two purposes.  One, the user is forced to give up their phone and use it as 
+                fodder to power the Light Box.  Much like throwing sticks into a fire, the user places their 
+                phone in the box.  Many users thought this was silly, as their phones would die with the 
+                flashlight on!  To that I say, perfect.  You don’t need your phone.  That’s the whole point 
+                of the Light Box!  I dead phone is a good phone.
+                <br>
+                <br>
+                <b> 3. New Materials </b>
+                <br>
+                <br>
+                I changed from cardboard to acrylic and birch to make the table more durable.  The cardboard 
+                inspired much of the box - the nostalgic feel and the delicate touch to the light.  However, 
+                the design out grew cardboard and was better suited with stronger materials.
+                <br>
+                <br>
+                <b> 4. Experiential Design </b>
+                <br>
+                <br>
+                For this rendition, I was very focused on the experience the user has when using the device.  
+                When someone builds a fire, they go through a methodically set of steps.  
+                They gather kindling, throw it in a pit, and slowly build the flame.  
+                My Light Box hopes to create an intimate routine with the user.  I hope they will become 
+                accustomed with the sliding of the curved pans, the drop of the phone, and slow reveal of the 
+                glowing acrylic circle.  
+                <br>
+                <br>
+                <b> Conclusion </b>
+                <br>
+                <br>
+                I don’t think this is a great product.  I would probably never use it.  Nevertheless, I think it is going in the right direction.  We should be building things that force us to go backwards - to get rid of the technology we can’t keep our hands off of.  
+            </p>
+        </div>
+        <div id = "video" class = "container w-80  border-bottom mb-2">
+            <h4 class = "pt-3"> Video </h4> 
+            <p> See below for a video showcasing the final Lightbox prototype! </p>
+
+            <p> Video redacted for anonymous concerns ... </p>
+            
+            <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/cF6civ3IKto" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
+        </div>
+    </body>
+    </html>

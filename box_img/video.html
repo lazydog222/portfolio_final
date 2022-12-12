@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<!-- saved from url=(0034)https://henryschaefer.com/lightbox -->
+<html lang="en-US" class="wf-jxcp-n4-active wf-nyty-n4-active wf-nyty-n6-active wf-nyty-n7-active wf-vcsm-i1-active wf-vcsm-i3-active wf-vcsm-i4-active wf-vcsm-n6-active wf-vcsm-n7-active wf-active"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <script type="text/javascript" src="./video_files/e7fb1b89a0"></script><script src="./video_files/nr-1216.min.js"></script><script type="text/javascript">(window.NREUM||(NREUM={})).init={ajax:{deny_list:["bam.nr-data.net"]}};(window.NREUM||(NREUM={})).loader_config={licenseKey:"e7fb1b89a0",applicationID:"750147145"};window.NREUM||(NREUM={}),__nr_require=function(t,e,n){function r(n){if(!e[n]){var i=e[n]={exports:{}};t[n][0].call(i.exports,function(e){var i=t[n][1][e];return r(i||e)},i,i.exports)}return e[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var i=0;i<n.length;i++)r(n[i]);return r}({1:[function(t,e,n){function r(){}function i(t,e,n,r){return function(){return s.recordSupportability("API/"+e+"/called"),o(t+e,[u.now()].concat(c(arguments)),n?null:this,r),n?void 0:this}}var o=t("handle"),a=t(9),c=t(10),f=t("ee").get("tracer"),u=t("loader"),s=t(4),d=NREUM;"undefined"==typeof window.newrelic&&(newrelic=d);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],l="api-",v=l+"ixn-";a(p,function(t,e){d[e]=i(l,e,!0,"api")}),d.addPageAction=i(l,"addPageAction",!0),d.setCurrentRouteName=i(l,"routeName",!0),e.exports=newrelic,d.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(t,e){var n={},r=this,i="function"==typeof e;return o(v+"tracer",[u.now(),t,n],r),function(){if(f.emit((i?"":"no-")+"fn-start",[u.now(),r,i],n),i)try{return e.apply(this,arguments)}catch(t){throw f.emit("fn-err",[arguments,this,t],n),t}finally{f.emit("fn-end",[u.now()],n)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(t,e){m[e]=i(v,e)}),newrelic.noticeError=function(t,e){"string"==typeof t&&(t=new Error(t)),s.recordSupportability("API/noticeError/called"),o("err",[t,u.now(),!1,e])}},{}],2:[function(t,e,n){function r(t){if(NREUM.init){for(var e=NREUM.init,n=t.split("."),r=0;r<n.length-1;r++)if(e=e[n[r]],"object"!=typeof e)return;return e=e[n[n.length-1]]}}e.exports={getConfiguration:r}},{}],3:[function(t,e,n){var r=!1;try{var i=Object.defineProperty({},"passive",{get:function(){r=!0}});window.addEventListener("testPassive",null,i),window.removeEventListener("testPassive",null,i)}catch(o){}e.exports=function(t){return r?{passive:!0,capture:!!t}:!!t}},{}],4:[function(t,e,n){function r(t,e){var n=[a,t,{name:t},e];return o("storeMetric",n,null,"api"),n}function i(t,e){var n=[c,t,{name:t},e];return o("storeEventMetrics",n,null,"api"),n}var o=t("handle"),a="sm",c="cm";e.exports={constants:{SUPPORTABILITY_METRIC:a,CUSTOM_METRIC:c},recordSupportability:r,recordCustom:i}},{}],5:[function(t,e,n){function r(){return c.exists&&performance.now?Math.round(performance.now()):(o=Math.max((new Date).getTime(),o))-a}function i(){return o}var o=(new Date).getTime(),a=o,c=t(11);e.exports=r,e.exports.offset=a,e.exports.getLastTimestamp=i},{}],6:[function(t,e,n){function r(t,e){var n=t.getEntries();n.forEach(function(t){"first-paint"===t.name?l("timing",["fp",Math.floor(t.startTime)]):"first-contentful-paint"===t.name&&l("timing",["fcp",Math.floor(t.startTime)])})}function i(t,e){var n=t.getEntries();if(n.length>0){var r=n[n.length-1];if(u&&u<r.startTime)return;var i=[r],o=a({});o&&i.push(o),l("lcp",i)}}function o(t){t.getEntries().forEach(function(t){t.hadRecentInput||l("cls",[t])})}function a(t){var e=navigator.connection||navigator.mozConnection||navigator.webkitConnection;if(e)return e.type&&(t["net-type"]=e.type),e.effectiveType&&(t["net-etype"]=e.effectiveType),e.rtt&&(t["net-rtt"]=e.rtt),e.downlink&&(t["net-dlink"]=e.downlink),t}function c(t){if(t instanceof y&&!w){var e=Math.round(t.timeStamp),n={type:t.type};a(n),e<=v.now()?n.fid=v.now()-e:e>v.offset&&e<=Date.now()?(e-=v.offset,n.fid=v.now()-e):e=v.now(),w=!0,l("timing",["fi",e,n])}}function f(t){"hidden"===t&&(u=v.now(),l("pageHide",[u]))}if(!("init"in NREUM&&"page_view_timing"in NREUM.init&&"enabled"in NREUM.init.page_view_timing&&NREUM.init.page_view_timing.enabled===!1)){var u,s,d,p,l=t("handle"),v=t("loader"),m=t(8),g=t(3),y=NREUM.o.EV;if("PerformanceObserver"in window&&"function"==typeof window.PerformanceObserver){s=new PerformanceObserver(r);try{s.observe({entryTypes:["paint"]})}catch(h){}d=new PerformanceObserver(i);try{d.observe({entryTypes:["largest-contentful-paint"]})}catch(h){}p=new PerformanceObserver(o);try{p.observe({type:"layout-shift",buffered:!0})}catch(h){}}if("addEventListener"in document){var w=!1,b=["click","keydown","mousedown","pointerdown","touchstart"];b.forEach(function(t){document.addEventListener(t,c,g(!1))})}m(f)}},{}],7:[function(t,e,n){function r(t,e){if(!i)return!1;if(t!==i)return!1;if(!e)return!0;if(!o)return!1;for(var n=o.split("."),r=e.split("."),a=0;a<r.length;a++)if(r[a]!==n[a])return!1;return!0}var i=null,o=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var c=navigator.userAgent,f=c.match(a);f&&c.indexOf("Chrome")===-1&&c.indexOf("Chromium")===-1&&(i="Safari",o=f[1])}e.exports={agent:i,version:o,match:r}},{}],8:[function(t,e,n){function r(t){function e(){t(c&&document[c]?document[c]:document[o]?"hidden":"visible")}"addEventListener"in document&&a&&document.addEventListener(a,e,i(!1))}var i=t(3);e.exports=r;var o,a,c;"undefined"!=typeof document.hidden?(o="hidden",a="visibilitychange",c="visibilityState"):"undefined"!=typeof document.msHidden?(o="msHidden",a="msvisibilitychange"):"undefined"!=typeof document.webkitHidden&&(o="webkitHidden",a="webkitvisibilitychange",c="webkitVisibilityState")},{}],9:[function(t,e,n){function r(t,e){var n=[],r="",o=0;for(r in t)i.call(t,r)&&(n[o]=e(r,t[r]),o+=1);return n}var i=Object.prototype.hasOwnProperty;e.exports=r},{}],10:[function(t,e,n){function r(t,e,n){e||(e=0),"undefined"==typeof n&&(n=t?t.length:0);for(var r=-1,i=n-e||0,o=Array(i<0?0:i);++r<i;)o[r]=t[e+r];return o}e.exports=r},{}],11:[function(t,e,n){e.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(t,e,n){function r(){}function i(t){function e(t){return t&&t instanceof r?t:t?u(t,f,a):a()}function n(n,r,i,o,a){if(a!==!1&&(a=!0),!l.aborted||o){t&&a&&t(n,r,i);for(var c=e(i),f=m(n),u=f.length,s=0;s<u;s++)f[s].apply(c,r);var p=d[w[n]];return p&&p.push([b,n,r,c]),c}}function o(t,e){h[t]=m(t).concat(e)}function v(t,e){var n=h[t];if(n)for(var r=0;r<n.length;r++)n[r]===e&&n.splice(r,1)}function m(t){return h[t]||[]}function g(t){return p[t]=p[t]||i(n)}function y(t,e){l.aborted||s(t,function(t,n){e=e||"feature",w[n]=e,e in d||(d[e]=[])})}var h={},w={},b={on:o,addEventListener:o,removeEventListener:v,emit:n,get:g,listeners:m,context:e,buffer:y,abort:c,aborted:!1};return b}function o(t){return u(t,f,a)}function a(){return new r}function c(){(d.api||d.feature)&&(l.aborted=!0,d=l.backlog={})}var f="nr@context",u=t("gos"),s=t(9),d={},p={},l=e.exports=i();e.exports.getOrSetContext=o,l.backlog=d},{}],gos:[function(t,e,n){function r(t,e,n){if(i.call(t,e))return t[e];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(t,e,{value:r,writable:!0,enumerable:!1}),r}catch(o){}return t[e]=r,r}var i=Object.prototype.hasOwnProperty;e.exports=r},{}],handle:[function(t,e,n){function r(t,e,n,r){i.buffer([t],r),i.emit(t,e,n)}var i=t("ee").get("handle");e.exports=r,r.ee=i},{}],id:[function(t,e,n){function r(t){var e=typeof t;return!t||"object"!==e&&"function"!==e?-1:t===window?0:a(t,o,function(){return i++})}var i=1,o="nr@id",a=t("gos");e.exports=r},{}],loader:[function(t,e,n){function r(){if(!M++){var t=T.info=NREUM.info,e=m.getElementsByTagName("script")[0];if(setTimeout(u.abort,3e4),!(t&&t.licenseKey&&t.applicationID&&e))return u.abort();f(x,function(e,n){t[e]||(t[e]=n)});var n=a();c("mark",["onload",n+T.offset],null,"api"),c("timing",["load",n]);var r=m.createElement("script");0===t.agent.indexOf("http://")||0===t.agent.indexOf("https://")?r.src=t.agent:r.src=l+"://"+t.agent,e.parentNode.insertBefore(r,e)}}function i(){"complete"===m.readyState&&o()}function o(){c("mark",["domContent",a()+T.offset],null,"api")}var a=t(5),c=t("handle"),f=t(9),u=t("ee"),s=t(7),d=t(2),p=t(3),l=d.getConfiguration("ssl")===!1?"http":"https",v=window,m=v.document,g="addEventListener",y="attachEvent",h=v.XMLHttpRequest,w=h&&h.prototype,b=!1;NREUM.o={ST:setTimeout,SI:v.setImmediate,CT:clearTimeout,XHR:h,REQ:v.Request,EV:v.Event,PR:v.Promise,MO:v.MutationObserver};var E=""+location,x={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1216.min.js"},O=h&&w&&w[g]&&!/CriOS/.test(navigator.userAgent),T=e.exports={offset:a.getLastTimestamp(),now:a,origin:E,features:{},xhrWrappable:O,userAgent:s,disabled:b};if(!b){t(1),t(6),m[g]?(m[g]("DOMContentLoaded",o,p(!1)),v[g]("load",r,p(!1))):(m[y]("onreadystatechange",i),v[y]("onload",r)),c("mark",["firstbyte",a.getLastTimestamp()],null,"api");var M=0}},{}],"wrap-function":[function(t,e,n){function r(t,e){function n(e,n,r,f,u){function nrWrapper(){var o,a,s,p;try{a=this,o=d(arguments),s="function"==typeof r?r(o,a):r||{}}catch(l){i([l,"",[o,a,f],s],t)}c(n+"start",[o,a,f],s,u);try{return p=e.apply(a,o)}catch(v){throw c(n+"err",[o,a,v],s,u),v}finally{c(n+"end",[o,a,p],s,u)}}return a(e)?e:(n||(n=""),nrWrapper[p]=e,o(e,nrWrapper,t),nrWrapper)}function r(t,e,r,i,o){r||(r="");var c,f,u,s="-"===r.charAt(0);for(u=0;u<e.length;u++)f=e[u],c=t[f],a(c)||(t[f]=n(c,s?f+r:r,i,f,o))}function c(n,r,o,a){if(!v||e){var c=v;v=!0;try{t.emit(n,r,o,e,a)}catch(f){i([f,n,r,o],t)}v=c}}return t||(t=s),n.inPlace=r,n.flag=p,n}function i(t,e){e||(e=s);try{e.emit("internal-error",t)}catch(n){}}function o(t,e,n){if(Object.defineProperty&&Object.keys)try{var r=Object.keys(t);return r.forEach(function(n){Object.defineProperty(e,n,{get:function(){return t[n]},set:function(e){return t[n]=e,e}})}),e}catch(o){i([o],n)}for(var a in t)l.call(t,a)&&(e[a]=t[a]);return e}function a(t){return!(t&&t instanceof Function&&t.apply&&!t[p])}function c(t,e){var n=e(t);return n[p]=t,o(t,n,s),n}function f(t,e,n){var r=t[e];t[e]=c(r,n)}function u(){for(var t=arguments.length,e=new Array(t),n=0;n<t;++n)e[n]=arguments[n];return e}var s=t("ee"),d=t(10),p="nr@original",l=Object.prototype.hasOwnProperty,v=!1;e.exports=r,e.exports.wrapFunction=c,e.exports.wrapInPlace=f,e.exports.argsToArray=u},{}]},{},["loader"]);</script>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="twitter:card" content="summary_large_image">
+      <meta name="twitter:site" content="@AdobePortfolio">
+      <meta property="og:title" content="Henry Schaefer - Light Box">
+      <meta property="og:image" content="https://cdn.myportfolio.com/c063c007-024f-4e5b-8339-aa30ba50d07f/eab997f3-cedd-4ce6-b6b1-b2ff5d6f590b_car_3x2.JPG?h=a1dbfe81d3454120b3673ff25edc361e">
+      <link rel="icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQAQMAAAAlPW0iAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAADUExURUxpcU3H2DoAAAABdFJOUwBA5thmAAAADElEQVQI12NgIA0AAAAwAAHHqoWOAAAAAElFTkSuQmCC">
+      <link rel="stylesheet" href="./video_files/main.css" type="text/css">
+      <link rel="stylesheet" href="./video_files/717829a48b5fad64747b7bf2f577ae731663032193.css" type="text/css">
+    <link rel="canonical" href="https://henryschaefer.com/lightbox">
+      <title>Henry Schaefer - Light Box</title>
+    <script type="text/javascript" src="./video_files/_vFHwc4eBcz8sctHB8r2Or-xGj9uJHUQPckeyCYRtE9feCCffHYEBsJzwD9oFDIDWhmKweIujcFKjR9ojQyKZAItw2BR5QmcwD9u5248FDF8FRjk5eF8jRJ-q3I7Ocy8d14oShFGjAmcZWJ0jhNlOfG0dW83da4XZcNC-Av0jhNlOfG0SY4zwKuh-AmaOcuoSeNkieZzde8zOcFzdPUGZAokpWFR-eB8ZcmkOcFzdPUlpWgzS1scdhUTdkoR.js" async="" onload="
+    try {
+      window.Typekit.load();
+    } catch (e) {
+      console.warn(&#39;Typekit not loaded.&#39;);
+    }
+    "></script>
+<style type="text/css">@font-face{font-family:jxcp;src:url(https://use.typekit.net/af/8143dd/0000000000000000000131bb/27/l?subset_id=2&fvd=n4&v=3) format("woff2"),url(https://use.typekit.net/af/8143dd/0000000000000000000131bb/27/d?subset_id=2&fvd=n4&v=3) format("woff"),url(https://use.typekit.net/af/8143dd/0000000000000000000131bb/27/a?subset_id=2&fvd=n4&v=3) format("opentype");font-weight:400;font-style:normal;font-stretch:normal;font-display:auto;}@font-face{font-family:nyty;src:url(https://use.typekit.net/af/46da36/00000000000000003b9acaf6/27/l?subset_id=2&fvd=n4&v=3) format("woff2"),url(https://use.typekit.net/af/46da36/00000000000000003b9acaf6/27/d?subset_id=2&fvd=n4&v=3) format("woff"),url(https://use.typekit.net/af/46da36/00000000000000003b9acaf6/27/a?subset_id=2&fvd=n4&v=3) format("opentype");font-weight:400;font-style:normal;font-stretch:normal;font-display:auto;}@font-face{font-family:nyty;src:url(https://use.typekit.net/af/027dd4/00000000000000003b9acafa/27/l?subset_id=2&fvd=n6&v=3) format("woff2"),url(https://use.typekit.net/af/027dd4/00000000000000003b9acafa/27/d?subset_id=2&fvd=n6&v=3) format("woff"),url(https://use.typekit.net/af/027dd4/00000000000000003b9acafa/27/a?subset_id=2&fvd=n6&v=3) format("opentype");font-weight:600;font-style:normal;font-stretch:normal;font-display:auto;}@font-face{font-family:nyty;src:url(https://use.typekit.net/af/6d4bb2/00000000000000003b9acafc/27/l?subset_id=2&fvd=n7&v=3) format("woff2"),url(https://use.typekit.net/af/6d4bb2/00000000000000003b9acafc/27/d?subset_id=2&fvd=n7&v=3) format("woff"),url(https://use.typekit.net/af/6d4bb2/00000000000000003b9acafc/27/a?subset_id=2&fvd=n7&v=3) format("opentype");font-weight:700;font-style:normal;font-stretch:normal;font-display:auto;}@font-face{font-family:vcsm;src:url(https://use.typekit.net/af/7283cd/00000000000000007735e608/30/l?subset_id=2&fvd=i1&v=3) format("woff2"),url(https://use.typekit.net/af/7283cd/00000000000000007735e608/30/d?subset_id=2&fvd=i1&v=3) format("woff"),url(https://use.typekit.net/af/7283cd/00000000000000007735e608/30/a?subset_id=2&fvd=i1&v=3) format("opentype");font-weight:100;font-style:italic;font-stretch:normal;font-display:auto;}@font-face{font-family:vcsm;src:url(https://use.typekit.net/af/40d372/00000000000000007735e607/30/l?subset_id=2&fvd=i3&v=3) format("woff2"),url(https://use.typekit.net/af/40d372/00000000000000007735e607/30/d?subset_id=2&fvd=i3&v=3) format("woff"),url(https://use.typekit.net/af/40d372/00000000000000007735e607/30/a?subset_id=2&fvd=i3&v=3) format("opentype");font-weight:300;font-style:italic;font-stretch:normal;font-display:auto;}@font-face{font-family:vcsm;src:url(https://use.typekit.net/af/3322cc/00000000000000007735e616/30/l?subset_id=2&fvd=i4&v=3) format("woff2"),url(https://use.typekit.net/af/3322cc/00000000000000007735e616/30/d?subset_id=2&fvd=i4&v=3) format("woff"),url(https://use.typekit.net/af/3322cc/00000000000000007735e616/30/a?subset_id=2&fvd=i4&v=3) format("opentype");font-weight:400;font-style:italic;font-stretch:normal;font-display:auto;}@font-face{font-family:vcsm;src:url(https://use.typekit.net/af/78aca8/00000000000000007735e60d/30/l?subset_id=2&fvd=n6&v=3) format("woff2"),url(https://use.typekit.net/af/78aca8/00000000000000007735e60d/30/d?subset_id=2&fvd=n6&v=3) format("woff"),url(https://use.typekit.net/af/78aca8/00000000000000007735e60d/30/a?subset_id=2&fvd=n6&v=3) format("opentype");font-weight:600;font-style:normal;font-stretch:normal;font-display:auto;}@font-face{font-family:vcsm;src:url(https://use.typekit.net/af/2555e1/00000000000000007735e603/30/l?subset_id=2&fvd=n7&v=3) format("woff2"),url(https://use.typekit.net/af/2555e1/00000000000000007735e603/30/d?subset_id=2&fvd=n7&v=3) format("woff"),url(https://use.typekit.net/af/2555e1/00000000000000007735e603/30/a?subset_id=2&fvd=n7&v=3) format("opentype");font-weight:700;font-style:normal;font-stretch:normal;font-display:auto;}</style><style type="text/css"></style></head>
+  <body class="link-transition" data-new-gr-c-s-check-loaded="14.1088.0" data-gr-ext-installed="" data-new-gr-c-s-loaded="14.1088.0">  <div class="page-background-video page-background-video-with-panel">
+  </div>
+  <div class="js-responsive-nav">
+    <div class="responsive-nav">
+      <div class="close-responsive-click-area js-close-responsive-nav">
+        <div class="close-responsive-button"></div>
+      </div>
+          <nav data-hover-hint="nav">
+      <div class="page-title">
+        <a href="https://henryschaefer.com/camino">camino</a>
+      </div>
+      <div class="page-title">
+        <a href="https://henryschaefer.com/contact">info</a>
+      </div>
+              <ul class="group">
+                  <li class="gallery-title"><a href="https://henryschaefer.com/design-1">design</a></li>
+              </ul>
+              <ul class="group">
+                  <li class="gallery-title"><a href="https://henryschaefer.com/photo">photo</a></li>
+              </ul>
+              <ul class="group">
+                  <li class="gallery-title"><a href="https://henryschaefer.com/work">video</a></li>
+              </ul>
+          </nav>
+    </div>
+  </div>
+  <div class="site-wrap cfix js-site-wrap">
+    <div class="site-container">
+      <div class="site-content e2e-site-content">
+        <div class="sidebar-content">
+          <header class="site-header">
+              <div class="logo-wrap" data-hover-hint="logo">
+                    <div class="logo e2e-site-logo-text logo-text  ">
+    <span class="preserve-whitespace">henry schaefer</span>
+</div>
+              </div>
+  <div class="hamburger-click-area js-hamburger">
+    <div class="hamburger">
+      <i></i>
+      <i></i>
+      <i></i>
+    </div>
+  </div>
+          </header>
+              <nav data-hover-hint="nav">
+      <div class="page-title">
+        <a href="https://henryschaefer.com/camino">camino</a>
+      </div>
+      <div class="page-title">
+        <a href="https://henryschaefer.com/contact">info</a>
+      </div>
+              <ul class="group">
+                  <li class="gallery-title"><a href="https://henryschaefer.com/design-1">design</a></li>
+              </ul>
+              <ul class="group">
+                  <li class="gallery-title"><a href="https://henryschaefer.com/photo">photo</a></li>
+              </ul>
+              <ul class="group">
+                  <li class="gallery-title"><a href="https://henryschaefer.com/work">video</a></li>
+              </ul>
+              </nav>
+        </div>
+        <main>
+  <div class="page-container" data-context="page.page.container" data-hover-hint="pageContainer">
+    <section class="page standard-modules">
+      <div class="page-content js-page-content" data-context="pages" data-identity="id:p606d22e6c5763af63da3adc1e68694c528598f80869f819c8e2d4">
+        <div id="project-canvas" class="js-project-modules modules content">
+          <div id="project-modules">
+              
+              
+              
+              
+              
+              <div class="project-module module text project-module-text align- js-project-module e2e-site-project-module-text">
+  <div class="rich-text js-text-editable module-text"><div><span style="font-family:vcsm; font-weight:600;"><span style="color:#000000;" class="texteditor-inline-color"><span style="font-size:30px;">Light Box</span></span></span></div><div>how can we make furniture that removes us from the digital world?</div></div>
+</div>
+
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              <div class="project-module module text project-module-text align- js-project-module e2e-site-project-module-text" style="padding-top: px;
+padding-bottom: 5px;
+">
+  <div class="rich-text js-text-editable module-text"><div style="line-height:9px;text-align:center;" class="texteditor-inline-lineheight"><span style="font-size:22px;" class="texteditor-inline-fontsize"><span style="font-family:vcsm; font-weight:600;"><span style="color:#000000;" class="texteditor-inline-color">Prototype One</span></span></span></div></div>
+</div>
+
+              
+              
+              
+              
+              
+              
+              <div class="project-module module video project-module-video js-js-project-module">
+    <div class="embed-dimensions" style="max-width: 1280px; max-height: 720px; margin: 0 auto;">
+    <div class="embed-aspect-ratio" style="padding-bottom: 56.25%; position: relative; height: 0px;">
+        <iframe title="Video Player" class="embed-content" src="./video_files/embed.html" frameborder="0" allowfullscreen="" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe>
+    </div>
+    </div>
+
+</div>
+
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              <div class="project-module module tree project-module-tree js-js-project-module e2e-site-project-module-tree">
+  <div class="tree-wrapper valign-top">
+      <div class="tree-child-wrapper" style="flex: 1919765654">
+        
+        <div class="project-module module image project-module-image js-js-project-module" style="padding-top: px;
+padding-bottom: px;
+">
+
+  
+
+  
+     <div class="js-lightbox lightbox-link" data-src="https://cdn.myportfolio.com/c063c007-024f-4e5b-8339-aa30ba50d07f/a2510d23-c8c5-4b87-a4bb-b8c302995170.jpg?h=053dedec993cb893527995de28f92713">
+           <img class="js-lazy e2e-site-project-module-image image-loaded" src="./video_files/a2510d23-c8c5-4b87-a4bb-b8c302995170_rw_1920.jpg" width="1920" srcset="https://cdn.myportfolio.com/c063c007-024f-4e5b-8339-aa30ba50d07f/a2510d23-c8c5-4b87-a4bb-b8c302995170_rw_600.jpg?h=f6cf641186cbe6198080e66c913c13fc 600w,https://cdn.myportfolio.com/c063c007-024f-4e5b-8339-aa30ba50d07f/a2510d23-c8c5-4b87-a4bb-b8c302995170_rw_1200.jpg?h=b1ead5566046dcc0ea3dd06bc99f894d 1200w,https://cdn.myportfolio.com/c063c007-024f-4e5b-8339-aa30ba50d07f/a2510d23-c8c5-4b87-a4bb-b8c302995170_rw_1920.jpg?h=dae29669f68433ba5a80fb4f9d622e27 1920w," sizes="(max-width: 1920px) 100vw, 1920px">
+     </div>
+  
+
+</div>
+
+        
+        
+        
+        
+        
+        
+        
+      </div>
+      <div class="tree-child-wrapper" style="flex: 1920000000">
+        
+        <div class="project-module module image project-module-image js-js-project-module" style="padding-top: px;
+padding-bottom: px;
+">
+
+  
+
+  
+     <div class="js-lightbox lightbox-link" data-src="https://cdn.myportfolio.com/c063c007-024f-4e5b-8339-aa30ba50d07f/bc660ee8-f191-49ac-aad8-f1c6644870d6.jpg?h=ac70386b096b548692ebc3a68b183368">
+           <img class="js-lazy e2e-site-project-module-image image-loaded" src="./video_files/bc660ee8-f191-49ac-aad8-f1c6644870d6_rw_1920.jpg" width="1920" srcset="https://cdn.myportfolio.com/c063c007-024f-4e5b-8339-aa30ba50d07f/bc660ee8-f191-49ac-aad8-f1c6644870d6_rw_600.jpg?h=85170bc5192f3f2cd9677bf642d212d5 600w,https://cdn.myportfolio.com/c063c007-024f-4e5b-8339-aa30ba50d07f/bc660ee8-f191-49ac-aad8-f1c6644870d6_rw_1200.jpg?h=e0e65bfff59e6e6ab531f92bccdc4109 1200w,https://cdn.myportfolio.com/c063c007-024f-4e5b-8339-aa30ba50d07f/bc660ee8-f191-49ac-aad8-f1c6644870d6_rw_1920.jpg?h=9f9875af40a4f7080ba355bacdb233ce 1920w," sizes="(max-width: 1920px) 100vw, 1920px">
+     </div>
+  
+
+</div>
+
+        
+        
+        
+        
+        
+        
+        
+      </div>
+  </div>
+</div>
+
+              
+              
+              
+              
+              
+              <div class="project-module module text project-module-text align- js-project-module e2e-site-project-module-text">
+  <div class="rich-text js-text-editable module-text"><div style="text-align:left;">LightBox is an experiment with light and cardboard that hopes to build intimacy and connection by mimicking the effects of a bonfire and forcing users to give up their phone.&nbsp;&nbsp;</div><div style="text-align:left;"><span style="font-family:vcsm; font-weight:600;"><span style="color:#999999;" class="texteditor-inline-color">Project Overview</span></span></div><div style="text-align:left;">On class in Wednesday, I sketched the direction I wanted to take my LightBox.&nbsp; I wanted to use the same base, but add functionality with the Arduino and make it feel more like a fire.&nbsp; In addition, following the same theme as my last project, I wanted the product to decrease phone use.&nbsp; Therefore, the user can only turn on the LightBox fire if they insert there phone into the slot.&nbsp; A user can not use the LightBox while using their phone.&nbsp;</div><div style="text-align:left;">Before building the object, I looked around for some inspiration.&nbsp; I liked the aesthetics and low to the ground nature of Japanese furniture, and made a Pinterest board of such items to guide me through the building process.&nbsp; Check it out here:&nbsp;<a href="https://href.li/?https://pin.it/24FRt9b" target="_blank">https://pin.it/24FRt9b</a>.</div><div style="text-align:left;"><span style="font-family:vcsm; font-weight:600;">Design Process</span></div><div style="text-align:left;">The process was done it two different steps.&nbsp; First, I coded the Arduino and then I integrated the system into the LightBox itself.</div><div style="text-align:left;"><span style="font-family:vcsm; font-style:italic; font-weight:100;">1. Arduino</span></div><div style="text-align:left;">Right after class, while working at the BDW, I was able to figure out the circuitry for the Arduino.&nbsp; I found a project on Instructables that turned on a light when something got close to the sensor and copied the code and wired up the board (<a href="https://href.li/?https://www.instructables.com/Motion-activated-light-with-Arduino-and-HC-SR04-se/" target="_blank">https://www.instructables.com/Motion-activated-light-with-Arduino-and-HC-SR04-se/</a>).&nbsp; Then, I found another project that showed how to make a set of three lights flicker similar to a fire, and integrated it into the code base.</div><div style="text-align:left;"><span style="font-family:vcsm; font-style:italic; font-weight:100;">2. Integration&nbsp;with Box</span></div><div style="text-align:left;">With the code all set and ready to go, I taped it to a piece of cardboard and attached it to the LightBox that I had made in last weeks iteration.&nbsp; To improve on my old iteration, I added two walls of tape, which create a nice ambient light.&nbsp; I also added a compartment which allows the user to insert there phone and turn on the LightBox.&nbsp;&nbsp;</div><div style="text-align:left;"><span style="font-family:vcsm; font-weight:600;">Conclusion</span></div><div style="text-align:left;">I am pretty happy with how the device turned out.&nbsp; The box feels like a fire and creates intimacy in the user’s space.&nbsp; Also, I was excited to see the Arduino come in hand and add some interesting user interaction.&nbsp; I think the product could be made more useful if it was bigger and brighter.&nbsp;</div></div>
+</div>
+
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              <div class="project-module module text project-module-text align- js-project-module e2e-site-project-module-text" style="padding-top: px;
+padding-bottom: 0px;
+">
+  <div class="rich-text js-text-editable module-text"><div><span style="font-family:vcsm; font-weight:600;"><span style="color:#000000;" class="texteditor-inline-color"><span style="font-size:22px;" class="texteditor-inline-fontsize">Prototype Two</span></span></span><br></div></div>
+</div>
+
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              <div class="project-module module tree project-module-tree js-js-project-module e2e-site-project-module-tree">
+  <div class="tree-wrapper valign-top">
+      <div class="tree-child-wrapper" style="flex: 1920000000">
+        
+        <div class="project-module module image project-module-image js-js-project-module" style="padding-top: px;
+padding-bottom: px;
+">
+
+  
+
+  
+     <div class="js-lightbox lightbox-link" data-src="https://cdn.myportfolio.com/c063c007-024f-4e5b-8339-aa30ba50d07f/0fa6261e-a68b-4ae4-8e17-548b8a6f84fa.jpg?h=32afcd6d2f0b4f2e1ee7269d7724e78f">
+           <img class="js-lazy e2e-site-project-module-image image-loaded" src="./video_files/0fa6261e-a68b-4ae4-8e17-548b8a6f84fa_rw_1920.jpg" width="1920" srcset="https://cdn.myportfolio.com/c063c007-024f-4e5b-8339-aa30ba50d07f/0fa6261e-a68b-4ae4-8e17-548b8a6f84fa_rw_600.jpg?h=0e5931b22ce8d934bfb28d24b88b981c 600w,https://cdn.myportfolio.com/c063c007-024f-4e5b-8339-aa30ba50d07f/0fa6261e-a68b-4ae4-8e17-548b8a6f84fa_rw_1200.jpg?h=1c836c9c24add047a87e3596f4bf6497 1200w,https://cdn.myportfolio.com/c063c007-024f-4e5b-8339-aa30ba50d07f/0fa6261e-a68b-4ae4-8e17-548b8a6f84fa_rw_1920.jpg?h=d8031e29cfa67d759248e7c954d37081 1920w," sizes="(max-width: 1920px) 100vw, 1920px">
+     </div>
+  
+
+</div>
+
+        
+        
+        
+        
+        
+        
+        
+      </div>
+      <div class="tree-child-wrapper" style="flex: 1920000000">
+        
+        <div class="project-module module image project-module-image js-js-project-module" style="padding-top: px;
+padding-bottom: px;
+">
+
+  
+
+  
+     <div class="js-lightbox lightbox-link" data-src="https://cdn.myportfolio.com/c063c007-024f-4e5b-8339-aa30ba50d07f/39a30218-a816-49be-b288-661ecfcdee41.jpg?h=266e706b9ba7ba3915630e465440c96a">
+           <img class="js-lazy e2e-site-project-module-image image-loaded" src="./video_files/39a30218-a816-49be-b288-661ecfcdee41_rw_1920.jpg" width="1920" srcset="https://cdn.myportfolio.com/c063c007-024f-4e5b-8339-aa30ba50d07f/39a30218-a816-49be-b288-661ecfcdee41_rw_600.jpg?h=25012ea6708253ae93e97bf55ebe4eb2 600w,https://cdn.myportfolio.com/c063c007-024f-4e5b-8339-aa30ba50d07f/39a30218-a816-49be-b288-661ecfcdee41_rw_1200.jpg?h=682b09d512a2f750f9d9eed582eceacc 1200w,https://cdn.myportfolio.com/c063c007-024f-4e5b-8339-aa30ba50d07f/39a30218-a816-49be-b288-661ecfcdee41_rw_1920.jpg?h=06e18873cee45d1f53a97dc3f8ee4052 1920w," sizes="(max-width: 1920px) 100vw, 1920px">
+     </div>
+  
+
+</div>
+
+        
+        
+        
+        
+        
+        
+        
+      </div>
+  </div>
+</div>
+
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              <div class="project-module module tree project-module-tree js-js-project-module e2e-site-project-module-tree">
+  <div class="tree-wrapper valign-top">
+      <div class="tree-child-wrapper" style="flex: 3840000000">
+        
+        <div class="project-module module image project-module-image js-js-project-module" style="padding-top: px;
+padding-bottom: px;
+">
+
+  
+
+  
+     <div class="js-lightbox lightbox-link" data-src="https://cdn.myportfolio.com/c063c007-024f-4e5b-8339-aa30ba50d07f/37f3b3e2-2fc0-40a6-871a-cdc5eb748f3d.JPG?h=67f49f69888f7f0130aee0bcca7ce2ec">
+           <img class="js-lazy e2e-site-project-module-image image-loaded" src="./video_files/37f3b3e2-2fc0-40a6-871a-cdc5eb748f3d_rw_3840.JPG" width="3840" srcset="https://cdn.myportfolio.com/c063c007-024f-4e5b-8339-aa30ba50d07f/37f3b3e2-2fc0-40a6-871a-cdc5eb748f3d_rw_600.JPG?h=faa89e3b05e3da6661ae26e3d831035d 600w,https://cdn.myportfolio.com/c063c007-024f-4e5b-8339-aa30ba50d07f/37f3b3e2-2fc0-40a6-871a-cdc5eb748f3d_rw_1200.JPG?h=3330860cf05f8c6c35024e1df2482f27 1200w,https://cdn.myportfolio.com/c063c007-024f-4e5b-8339-aa30ba50d07f/37f3b3e2-2fc0-40a6-871a-cdc5eb748f3d_rw_1920.JPG?h=33ed246168f6dd7f48d6ff28e21f78e6 1920w,https://cdn.myportfolio.com/c063c007-024f-4e5b-8339-aa30ba50d07f/37f3b3e2-2fc0-40a6-871a-cdc5eb748f3d_rw_3840.JPG?h=a878ae10d3536dddfab40c5a5b1ef403 3840w," sizes="(max-width: 3840px) 100vw, 3840px">
+     </div>
+  
+
+</div>
+
+        
+        
+        
+        
+        
+        
+        
+      </div>
+      <div class="tree-child-wrapper" style="flex: 3840000000">
+        
+        <div class="project-module module image project-module-image js-js-project-module" style="padding-top: px;
+padding-bottom: px;
+">
+
+  
+
+  
+     <div class="js-lightbox lightbox-link" data-src="https://cdn.myportfolio.com/c063c007-024f-4e5b-8339-aa30ba50d07f/5800ae56-d6bf-4563-96af-58aee9637255.JPG?h=bbec7b2c5d14628025e0b9a1c5a571d8">
+           <img class="js-lazy e2e-site-project-module-image image-loaded" src="./video_files/5800ae56-d6bf-4563-96af-58aee9637255_rw_3840.JPG" width="3840" srcset="https://cdn.myportfolio.com/c063c007-024f-4e5b-8339-aa30ba50d07f/5800ae56-d6bf-4563-96af-58aee9637255_rw_600.JPG?h=14f4c6732386eaf9ba6efd61a85a1720 600w,https://cdn.myportfolio.com/c063c007-024f-4e5b-8339-aa30ba50d07f/5800ae56-d6bf-4563-96af-58aee9637255_rw_1200.JPG?h=21d95b867ed2234fcd36df18771852ba 1200w,https://cdn.myportfolio.com/c063c007-024f-4e5b-8339-aa30ba50d07f/5800ae56-d6bf-4563-96af-58aee9637255_rw_1920.JPG?h=bbf4e0d23c4a4d93702dda8e095960a4 1920w,https://cdn.myportfolio.com/c063c007-024f-4e5b-8339-aa30ba50d07f/5800ae56-d6bf-4563-96af-58aee9637255_rw_3840.JPG?h=4f35da3e0545b32c580e5d6f6b7ebfc8 3840w," sizes="(max-width: 3840px) 100vw, 3840px">
+     </div>
+  
+
+</div>
+
+        
+        
+        
+        
+        
+        
+        
+      </div>
+  </div>
+</div>
+
+              
+              
+              <div class="project-module module video project-module-video js-js-project-module">
+    <div class="embed-dimensions" style="max-width: 1280px; max-height: 720px; margin: 0 auto;">
+    <div class="embed-aspect-ratio" style="padding-bottom: 56.25%; position: relative; height: 0px;">
+        <iframe title="Video Player" class="embed-content" src="./video_files/embed(1).html" frameborder="0" allowfullscreen="" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe>
+    </div>
+    </div>
+
+</div>
+
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              <div class="project-module module text project-module-text align- js-project-module e2e-site-project-module-text">
+  <div class="rich-text js-text-editable module-text"><div style="text-align:left;"><span style="color:#999999;" class="texteditor-inline-color"><span style="font-size:18px;" class="texteditor-inline-fontsize"><span style="font-family:vcsm; font-weight:600;">Changes from Prototype One</span></span></span></div><div style="text-align:left;"><span style="font-family:vcsm;font-style:italic;font-weight:100;"><span style="color:#999999;" class="texteditor-inline-color">1. No Arduino</span></span></div><div style="text-align:left;">I got rid of the Arduino to make the experience fully analog.&nbsp; Depending on the Arduino battery / having the plug in the table didn’t make sense.</div><div style="text-align:left;"><span style="font-family:vcsm; font-style:italic; font-weight:100;">2. Phone Powered</span></div><div style="text-align:left;">Based on advice from Jack, I decided to use the phone flashlights to power the Light Box!&nbsp; This servers two purposes.&nbsp; One, the user is forced to give up their phone and use it as fodder to power the Light Box.&nbsp; Much like throwing sticks into a fire, the user places their phone in the box.&nbsp; Many users thought this was silly, as their phones would die with the flashlight on!&nbsp; To that I say, perfect.&nbsp; You don’t need your phone.&nbsp; That’s the whole point of the Light Box!&nbsp; I dead phone is a good phone.</div><div style="text-align:left;"><span style="font-family:vcsm; font-style:italic; font-weight:100;">3. New Materials</span></div><div style="text-align:left;">I changed from cardboard to acrylic and birch to make the table more durable.&nbsp; The cardboard inspired much of the box - the nostalgic feel and the delicate touch to the light.&nbsp; However, the design out grew cardboard and was better suited with stronger materials.</div><div style="text-align:left;"><span style="font-family:vcsm; font-style:italic; font-weight:100;">4. Experiential Design</span></div><div style="text-align:left;">For this rendition, I was very focused on the experience the user has when using the device.&nbsp; When someone builds a fire, they go through a methodically set of steps.&nbsp; They gather kindling, throw it in a pit, and slowly build the flame.&nbsp; My Light Box hopes to create an intimate routine with the user.&nbsp; I hope they will become accustomed with the sliding of the curved pans, the drop of the phone, and slow reveal of the glowing acrylic circle.&nbsp;&nbsp;</div><div style="text-align:left;"><span style="font-family:vcsm; font-weight:600;">Conclusion</span></div><div style="text-align:left;">I don’t think this is a great product.&nbsp; I would probably never use it.&nbsp; Nevertheless, I think it is going in the right direction.&nbsp; We should be building things that force us to go backwards - to get rid of the technology we can’t keep our hands off of.&nbsp;&nbsp;</div></div>
+</div>
+
+              
+              
+              
+              
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+        </main>
+      </div>
+    </div>
+  </div>
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"e7fb1b89a0","applicationID":"750147145","transactionName":"ZwZaYkJVDERXUxULCV5Me0NDQA1aGWsmJzJtQxdtS0QDQ14KT0gbbQ==","queueTime":0,"applicationTime":46,"atts":"S0FNFApPHxsUUUNYHU0e","errorBeacon":"bam.nr-data.net","agent":""}</script>
+<script type="text/javascript">
+  // fix for Safari's back/forward cache
+  window.onpageshow = function(e) {
+    if (e.persisted) { window.location.reload(); }
+  };
+</script>
+  <script type="text/javascript">var __config__ = {"page_id":"p606d22e6c5763af63da3adc1e68694c528598f80869f819c8e2d4","theme":{"name":"jackie"},"pageTransition":true,"linkTransition":true,"disableDownload":false,"localizedValidationMessages":{"required":"This field is required","Email":"This field must be a valid email address"},"lightbox":{"enabled":true,"color":{"opacity":0.94,"hex":"#fff"}},"cookie_banner":{"enabled":false}};</script>
+  <script type="text/javascript" src="./video_files/translations"></script>
+  <script type="text/javascript" src="./video_files/main.js"></script><div class="js-lightbox-wrap offscreen" id="lightbox-wrap">
+    
+  <div class="js-blocking" id="lightbox-blocking" style="background-color: rgb(255, 255, 255); opacity: 0.94;">
+    <span class="lightbox-spinner"></span>
+  </div>
+
+    <div class="js-lightbox-inner-wrap" id="lightbox-inner-wrap">
+      <div class="js-img-wrap" id="lightbox-img-wrap">
+        
+  <div class="lightbox-extra control prev js-control js-prev">
+    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" x="0" y="0" width="60" height="60" viewBox="0 0 60 60" xml:space="preserve">
+      <circle class="lightbox-icon-bg" cx="30" cy="30" r="30"></circle>
+      <path class="lightbox-icon-arrow" d="M36.8,36.4L30.3,30l6.5-6.4l-3.5-3.4l-10,9.8l10,9.8L36.8,36.4z"></path>
+    </svg>
+  </div>
+
+        
+  <div class="lightbox-extra control next js-control js-next">
+    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" x="0" y="0" width="60" height="60" viewBox="0 0 60 60" xml:space="preserve">
+      <circle class="lightbox-icon-bg" cx="30" cy="30" r="30"></circle>
+      <path class="lightbox-icon-arrow" d="M24.2,23.5l6.6,6.5l-6.6,6.5l3.6,3.5L37.8,30l-10.1-9.9L24.2,23.5z"></path>
+    </svg>
+  </div>
+
+        
+  <div class="lightbox-extra control close js-control js-close">
+    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" x="0" y="0" viewBox="0 0 100 100" preserveAspectRatio="xMidYMid meet" fill="#000">
+      <circle class="lightbox-icon-bg" cx="50" cy="50" r="47.5"></circle>
+      <polygon class="lightbox-icon-close" points="64.5,39.8 60.2,35.5 50,45.7 39.8,35.5 35.5,39.8 45.7,50 35.5,60.2 39.8,64.5 50,54.3 60.2,64.5 64.5,60.2 54.3,50"></polygon>
+    </svg>
+  </div>
+
+        <div class="lightbox-contents js-contents"><div data-slide-id="5" class="js-slide offscreen"><div class="js-slide-content lightbox-content hidden"><img src="./video_files/5800ae56-d6bf-4563-96af-58aee9637255.JPG"></div></div><div data-slide-id="0" class="js-slide offscreen"><div class="js-slide-content lightbox-content hidden"><img src="./video_files/a2510d23-c8c5-4b87-a4bb-b8c302995170.jpg"></div></div><div data-slide-id="1" class="js-slide offscreen"><div class="js-slide-content lightbox-content hidden"><img src="./video_files/bc660ee8-f191-49ac-aad8-f1c6644870d6.jpg"></div></div><div data-slide-id="4" class="js-slide offscreen"><div class="js-slide-content lightbox-content hidden"><img src="./video_files/37f3b3e2-2fc0-40a6-871a-cdc5eb748f3d.JPG"></div></div><div data-slide-id="2" class="js-slide offscreen"><div class="js-slide-content lightbox-content hidden"><img src="./video_files/0fa6261e-a68b-4ae4-8e17-548b8a6f84fa.jpg"></div></div><div data-slide-id="3" class="js-slide offscreen"><div class="js-slide-content lightbox-content hidden"><img src="./video_files/39a30218-a816-49be-b288-661ecfcdee41.jpg"></div></div></div>
+      </div>
+    </div>
+  </div>
+
+</body><grammarly-desktop-integration data-grammarly-shadow-root="true"></grammarly-desktop-integration></html>

@@ -1,0 +1,100 @@
+<!-- The code in this HTML file was based off of Jeff's video on bootstrap! 
+    Here is the link: https://www.youtube.com/watch?v=6Df6xbs5m8A&ab_channel=JeffHuang -->
+
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="bootstrap.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Lazy Dog's Portfolio</title>
+</head>
+<body>
+    <nav class="navbar navbar-light navbar-custom navbar-expand-sm">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">LD</a>
+            <div class="collapse navbar-collapse">
+                <ul class="navbar-nav">
+                    <li class="navbar-item"><a href="#Design_Statement" class="nav-link">Design Statement</a></li>
+                    <li class="navbar-item"><a href="#p" class="nav-link">Projects</a></li>
+                    <li class="navbar-item"><a href="#c" class="nav-link">Contact Me</a></li>
+                </ul>
+            </div>
+        </div>    
+    </nav>
+    <div class = "d-flex flex-column blankets p-5 justify-content-center">
+        <h1 class= "text-dark display-1">Lady Dog</h1>
+        <h2 class = "text-dark"> Design Portfolio </h2>   
+    </div> 
+    <div id = "Design_Statement" class = "container-fluid border-bottom pb-4">
+        <div class = "d-flex flex-row">
+            <div class = "text-center">
+                <img src = "./images/dog.jpeg" class = "w-50">
+            </div>
+            <div class = "text-left mt-5 w-50">
+                <h3> Hello, I'm Lazy Dog. </h3>
+                <h5> I am a designer, photographer, and filmmaker from Providence, Rhode Island.  </h5>
+                <p2> My goal is to design interfaces that offer a transparent and unbiased experience.  As a photographer,
+                    I am especially interested in how our media outlets shape the way we create, consume, and distrubute videos and photos.
+                    I think media platfroms should function as blank canvases that allow (and don't flatten) the various ways we express ourselves.  
+                    As I am still a student of design, the work I have here showcases my development as a designer striving to create interfaces
+                    which don't get in the way.  In my future projects, I hope to focus on specifically photographic websites and applications.  
+                </p2>
+            </div>
+        </div>
+    </div>
+    
+    <div id = "p" class = "border-bottom">
+        <h1 class = "pt-5 text-center"> Projects </h1>
+        <div class="row flex-wrap justify-content-center m-5">
+            <div class="col border rounded shadow d-flex flex-column w-25 align-items-center justify-content-around m-3 p-4 text-center">
+                <h3 class = "pb-3"> <u>Responsive Redesign </u> </h3>
+                <img src = "./project_img/3.png" class = "w-50">
+                <p1 class = "pt-3"> 
+                    Project Gutenberg is one of the largest online e-Book libraries on the web.
+                    Because of my interest in media distribution platforms, I decided to redeign their old website to enhance ease of use and aesthetic value.
+                    Throughout the project, I made sure to stick closely with Project Gutenberg's commitment to adaptability and freedom of use.</p1>
+                <a class="btn btn-outline-dark m-3" target = "_blank" href = "https://lazydog222.github.io/project_2/#"> Enter Site </a>
+            </div>
+            <div class="col border rounded shadow d-flex flex-column w-25 align-items-center justify-content-around m-3 p-4 text-center">
+                <h3 class = "pb-3"> <u>Photo Gallery</u> </h3>
+                <img src = "./project_img/4.png" class = "w-75">
+                <p1 class = "pt-3"> 
+                    In May 2022, I hiked the Camino De Sangtiago in Spain.  I brought along my grandfathers
+                film camera and took a series of photographs.  Since they are film, and not digital, I have since struggled to 
+            interact with and share the photos. In order to practice my react skills, and also experiment
+        with the presentation and filtering of my photographic work, I decided to create a website of my Camino photographs to share with friends.  </p1>
+                <a class="btn btn-outline-dark m-3" target = "_blank" href = "https://lazydog222.github.io/dev/"> Enter Site </a>    
+            </div>
+        </div>
+        <div class = "row flex-wrap justify-content-center m-5">
+            <div class="col border rounded shadow d-flex flex-column w-25 align-items-center justify-content-around m-3 p-4 text-center">
+                <h3 class = "pb-3"> <u>Toaster Interface Analysis</u> </h3>
+                <img src = "./project_img/2.png" class = "w-50">
+                <p1 class = "pt-3"> 
+                    Every morning, my roomates and I use the same toaster.  In order to practice my storyboarding and persona creation
+                skills, I decided to use the device as a test subject.  By analyzing my roomate's interactions with the device I was able to
+            achieve a more nuanced perspective on how small design choices can change how our mornings unfold.  Please check out an overview of
+        the process below to see how I used storyboards and personas to dig deeper into a simple interface. </p1>
+                <a class="btn btn-outline-dark m-3" target = "_blank" href = "toaster.html"> Enter Site </a>
+            </div>
+            <div class="col border rounded shadow d-flex flex-column w-25 align-items-center justify-content-around m-3 p-4 text-center">
+                <h3 class = ""> <u>Material Design</u> </h3>
+                <img class = "rotate w-50" src = "./project_img/1.png">
+                <p1 class = "pt-3"> 
+                    Beyond digital design, I am also interested in how physical objects can pull us away from our
+                phones and into the real world.  In my Material Design class, I designed a small light box that operates off of
+            the users' phone flashlights.  This experiemental design project is my modern take on the campfire - instead of tinder
+        and sticks the user must place their phone in the box to light up the room.   </p1>
+                <a class="btn btn-outline-dark m-3" target = "_blank" href = "box.html"> Enter Site </a>
+            </div>
+        </div>
+        </div>
+    </div>
+    <div id = "c" class = "container-fluid text-center border-bottom">
+        <h4 class = "pt-3"> Contact Information </h4> 
+        <p class = "lead"> Phone: xxx-xxx-xxxx <br> Email: my_email@brown.edu </p>
+    </div>
+</body>
+</html>
